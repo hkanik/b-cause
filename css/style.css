@@ -11,6 +11,7 @@
 
 
 .headline {
+    padding: 0;
     height: 52px;
 }
 
@@ -37,6 +38,7 @@
     background-color: #1A1A1A;
     opacity: 0.8;
     border-bottom: 1px solid #4C4C4C;
+    padding: 0;
 }
 
 .title_transparent_layer {
@@ -1366,6 +1368,9 @@
     font-weight: bold;
 }
 
+.dis {
+    display: none;
+}
 
 
 
@@ -1379,6 +1384,59 @@
     .headline h6 {
         font-size: 10px;
     }
+
+    .logo {
+
+        padding: 0;
+
+        margin: 0;
+
+        height: 62px;
+    }
+
+    .logo img {
+        height: 20px;
+        width: 100px;
+        margin-top: 16px;
+    }
+
+    .dis {
+        display: block;
+    }
+
+    .menu {
+        padding: 0;
+        float: left;
+        text-align: center;
+    }
+
+    .menu ul {
+        padding: 0;
+        margin: 0;
+        float: right;
+        list-style: none;
+    }
+
+    .menu ul li {
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu ul li a {
+        font-size: 10px;
+        color: white;
+        text-decoration: none;
+        padding: 23px 12px 23px 5px;
+        line-height: 6;
+    }
+
+    .menu ul li a:hover {
+        color: #589DEF;
+        border-bottom: 2px solid #0C52A2;
+        text-align: center;
+    }
+
 }
 
 /*Small devices (landscape phones, 576px and up)*/
@@ -1389,10 +1447,37 @@
     .headline h6 {
         font-size: 10px;
     }
+
 }
 
 /*Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) and (max-width: 1199.98px) {}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .headline h6 {
+        font-size: 12px;
+    }
+
+}
 
 /*Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .headline {}
+
+    .headline h6 {
+        font-size: 17px;
+        vertical-align: middle;
+    }
+
+}
+
+/*Extra Extra large devices (large desktops, 1441px and up)*/
+@media (min-width: 1441px) {
+    .headline {
+        height: 70px;
+    }
+
+    .headline h6 {
+        font-size: 30px;
+        vertical-align: middle;
+    }
+
+}
